@@ -9,11 +9,11 @@ import java.util.Arrays;
  */
 
 // @lc code=start
-class Solution2 {
+class Solution {
 
     public static void main(String[] args) {
         int[] test = new int[] {-18,-10,-3,1,4,7,3,9,5,17,11,14,3,0};
-        var s = new Solution2();
+        var s = new Solution();
 
         long startTime = System.currentTimeMillis();
         int[] result = s.twoSum(test,-6);
