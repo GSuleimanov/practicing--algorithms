@@ -2,8 +2,6 @@ package leetcode.set_mismatch;
 
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.function.IntConsumer;
-import java.util.stream.IntStream;
 
 /*
  * @lc app=leetcode id=645 lang=java
@@ -28,12 +26,9 @@ class Solution {
 
     public int[] findErrorNums(int[] nums) {
         HashSet<Integer> uniqs = new HashSet<>();
-        IntConsumer addAndFixDupl = x -> { if (!uniqs.add(x)) result[DUPL] = x; };
-        Arrays.stream(nums).forEach(addAndFixDupl);
-        result[MISS] = IntStream.range(1, nums.length+1)
-                .filter(x -> !uniqs.contains(x))
-                .findAny().orElse(0);
-        // System.out.printf("nums➤ %s, uniqs➤ %s, result➤ -> %s\n", Arrays.toString(nums), uniqs, Arrays.toString(result));
+        int sumOfNums = Arrays.stream(nums).peek(x -> { if (result[DUPL] == 0 && !uniqs.add(x)) result[DUPL] = x; }).sum();
+        int expectedSum = nums.length*(nums.length+1)/2;
+        result[MISS] = expectedSum - (sumOfNums - result[DUPL]);
         return result;
     }
 }
