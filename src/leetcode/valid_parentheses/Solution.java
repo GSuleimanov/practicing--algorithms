@@ -1,4 +1,4 @@
-package valid_parentheses;
+package leetcode.valid_parentheses;
 
 import java.util.LinkedList;
 

@@ -1,4 +1,4 @@
-package reverse_integer;
+package leetcode.reverse_integer;
 /*
  * @lc app=leetcode id=7 lang=java
  *

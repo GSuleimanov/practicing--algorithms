@@ -1,4 +1,4 @@
-package number_of_digit_one;
+package leetcode.number_of_digit_one;
 /*
  * @lc app=leetcode id=233 lang=java
  *

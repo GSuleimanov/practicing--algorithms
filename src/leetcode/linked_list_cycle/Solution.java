@@ -1,4 +1,4 @@
-package linked_list_cycle;
+package leetcode.linked_list_cycle;
 /*
  * @lc app=leetcode id=141 lang=java
  *

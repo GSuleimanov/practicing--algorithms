@@ -1,4 +1,4 @@
-package longest_common_prefix;
+package leetcode.longest_common_prefix;
 
 /*
  * @lc app=leetcode id=14 lang=java

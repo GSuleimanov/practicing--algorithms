@@ -1,4 +1,4 @@
-package roman_to_integer;
+package leetcode.roman_to_integer;
 
 import java.util.HashMap;
 
